@@ -7,7 +7,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
-#include "../Libft/libft.h"
+#include "./Libft/libft.h"
 
 typedef struct s_node {
     int value;
@@ -26,7 +26,6 @@ t_node *remove_front(t_node **head);
 t_node *remove_back(t_node **head);
 int list_size(t_node *head);
 int *list_for_arr(t_node *head, int *arr_size);
-void print_list(t_node *head);
 void free_list(t_node **head);
 void swap(t_node **head);
 void push(t_node **src, t_node **dest);
@@ -45,5 +44,21 @@ void rrb(t_node **stack_b);
 void rrr(t_node **stack_a, t_node **stack_b);
 void sort_two(t_node **stack_a);
 void sort_three(t_node **stack_a);
+int find_min(t_node *stack);
+int find_position(t_node *stack, int value);
+void push_min_to_b(t_node **stack_a, t_node **stack_b);
+void sort_four(t_node **stack_a, t_node **stack_b);
+void sort_five(t_node **stack_a, t_node **stack_b);
+int get_max_bits(int size);
+void sort_by_bit(t_node **stack_a, t_node **stack_b, int bit, int size);
+void radix_sort(t_node **stack_a, t_node **stack_b);
+int *create_sort_array(int *arr, int size);
+void replace_with_index(t_node *stack, int *sorted, int size);
+void index_stack(t_node **stack);
+void free_split(char **split);
+char **handle_args(int argc, char **argv, int *start_index, int *is_split);
+void parse_and_fill_stack(char **args, int start, t_node **stack_a, int is_split);
+void check_duplicates(t_node **stack_a);
+void sort_stack(t_node **stack_a, t_node **stack_b, int size);
 
 #endif

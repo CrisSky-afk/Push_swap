@@ -72,25 +72,6 @@ t_node *remove_back(t_node **head)
     return (last);
 }
 
-void print_list(t_node *head)
-{
-    while (head)
-    {
-        printf("%d ", head->value);
-        head = head->next;
-    }
-    printf("\n");
-}
-
-t_node *last_node(t_node *head)
-{
-    if (!head)
-        return (NULL);
-    while (head->next)
-        head = head->next;
-    return (head);
-}
-
 int list_size(t_node *head)
 {
     int count = 0;
