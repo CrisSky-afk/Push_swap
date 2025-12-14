@@ -6,7 +6,7 @@
 /*   By: csuomins <csuomins@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/14 13:54:02 by csuomins          #+#    #+#             */
-/*   Updated: 2025/12/14 15:01:49 by csuomins         ###   ########.fr       */
+/*   Updated: 2025/12/14 16:02:12 by csuomins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,11 @@ int	*list_for_arr(t_node *head, int *arr_size)
 	int	*arr;
 
 	i = 0;
+	if (!head)
+	{
+		*arr_size = 0;
+		return (NULL);
+	}
 	*arr_size = list_size(head);
 	arr = malloc(sizeof(int) * (*arr_size));
 	if (!arr)

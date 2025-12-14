@@ -5,7 +5,7 @@ CFLAGS = -Wall -Wextra -Werror
 LIBFT_DIR = Libft
 LIBFT = $(LIBFT_DIR)/libft.a
 
-SRC = index.c list_two.c list.c main.c mini_sort.c mini_sort2.c operations2.c operations3.c operations.c parsing.c radix_sort.c utils.c
+SRC = index.c list2.c list.c main.c mini_sort.c operations2.c operations3.c operations.c parsing.c radix_sort.c utils.c utils2.c
 OBJ = $(SRC:.c=.o)
 
 all: $(LIBFT) $(NAME)

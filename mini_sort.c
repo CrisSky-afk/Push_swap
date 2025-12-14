@@ -6,7 +6,7 @@
 /*   By: csuomins <csuomins@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/14 13:38:13 by csuomins          #+#    #+#             */
-/*   Updated: 2025/12/14 14:56:38 by csuomins         ###   ########.fr       */
+/*   Updated: 2025/12/14 15:52:49 by csuomins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,53 +47,18 @@ void	sort_three(t_node **stack_a)
 		rra(stack_a);
 }
 
-int	find_min(t_node *stack)
+void	sort_four(t_node **stack_a, t_node **stack_b)
 {
-	int	min;
-
-	min = stack->value;
-	while (stack)
-	{
-		if (stack->value < min)
-			min = stack->value;
-		stack = stack->next;
-	}
-	return (min);
+	push_min_to_b(stack_a, stack_b);
+	sort_three(stack_a);
+	pa(stack_b, stack_a);
 }
 
-int	find_position(t_node *stack, int value)
+void	sort_five(t_node **stack_a, t_node **stack_b)
 {
-	int	i;
-
-	i = 0;
-	while (stack)
-	{
-		if (stack->value == value)
-			return (i);
-		stack = stack->next;
-		i++;
-	}
-	return (-1);
-}
-
-void	push_min_to_b(t_node **stack_a, t_node **stack_b)
-{
-	int	min;
-	int	pos;
-	int	size;
-	int	i;
-
-	min = find_min(*stack_a);
-	pos = find_position(*stack_a, min);
-	size = list_size(*stack_a);
-	i = 0;
-	while ((*stack_a)->value != min)
-	{
-		if (pos <= size / 2)
-			ra(stack_a);
-		else
-			rra(stack_a);
-		i++;
-	}
-	pb(stack_a, stack_b);
+	push_min_to_b(stack_a, stack_b);
+	push_min_to_b(stack_a, stack_b);
+	sort_three(stack_a);
+	pa(stack_b, stack_a);
+	pa(stack_b, stack_a);
 }
