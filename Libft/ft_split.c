@@ -6,7 +6,7 @@
 /*   By: csuomins <csuomins@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/07 16:55:14 by csuomins          #+#    #+#             */
-/*   Updated: 2025/08/13 18:23:52 by csuomins         ###   ########.fr       */
+/*   Updated: 2025/12/14 13:58:47 by csuomins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,37 +84,3 @@ char	**ft_split(char const *s, char c)
 	}
 	return (words);
 }
-
-// int main (void)
-// {
-// 	const char *str1 = "split  ||this|for|me|||||!|";
-// 	char c = '|';
-// 	char **words;
-
-// 	words = ft_split(str1, c);
-// 	if (!words)
-// 		return 1;
-
-// 	printf("Antes de splitar: %s\n", str1);
-// 	printf("Depois de splitar:\n");
-// 	int i = 0;
-// 	while (words[i])
-// 	{
-// 		printf("%s\n", words[i]);
-// 		i++;
-// 	}
-// 	i = 0;
-// 	while (words[i])
-// 	{
-//     	free(words[i]);  // libera cada string individual
-//     	i++;
-// 	}
-// 	free(words);  // libera o array de ponteiros
-
-// 	return 0;
-// }
-
-// ft_split cria o array (char **) 
-// → ponteiro de ponteiro.
-// ft_fill_result preenche esse array 
-// → precisa receber o mesmo ponteiro de ponteiro.

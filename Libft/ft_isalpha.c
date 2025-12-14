@@ -6,7 +6,7 @@
 /*   By: csuomins <csuomins@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 19:40:52 by csuomins          #+#    #+#             */
-/*   Updated: 2025/08/13 17:40:14 by csuomins         ###   ########.fr       */
+/*   Updated: 2025/12/14 13:57:19 by csuomins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,3 @@ int	ft_isalpha(int c)
 		return (1);
 	return (0);
 }
-
-// int main (void)
-// {
-// 	printf("%d\n", ft_isalpha('9'));
-// 	printf("%d\n", ft_isalpha('u'));
-// 	printf("%d\n", ft_isalpha('R'));
-// 	return (0);
-// }

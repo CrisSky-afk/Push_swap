@@ -6,7 +6,7 @@
 /*   By: csuomins <csuomins@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/05 16:52:43 by csuomins          #+#    #+#             */
-/*   Updated: 2025/08/12 19:48:49 by csuomins         ###   ########.fr       */
+/*   Updated: 2025/12/14 13:59:52 by csuomins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,12 +34,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	ft_strlcpy(str, &s1[start], end - start + 2);
 	return (str);
 }
-
-// int main (void)
-// {
-// 	char *str1 = "aaaaaaaaaaaaaaaaacriativaaaaaaaaaaa";
-// 	char *str2 = "a";
-// 	char *result = ft_strtrim(str1, str2);
-// 	printf("%s\n", result);
-// 	free(result);
-// }

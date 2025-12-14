@@ -6,7 +6,7 @@
 /*   By: csuomins <csuomins@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 21:19:33 by csuomins          #+#    #+#             */
-/*   Updated: 2025/08/13 17:40:58 by csuomins         ###   ########.fr       */
+/*   Updated: 2025/12/14 13:58:14 by csuomins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,11 +26,3 @@ void	*ft_memset(void *str, int c, size_t n)
 	}
 	return (str);
 }
-
-// int main (void)
-// {
-// 	char str1[] = "estou fazendo testes";
-// 	char *result = ft_memset(str1, '!', 8);
-// 	printf("%s\n", result);
-// 	return (0);
-// }

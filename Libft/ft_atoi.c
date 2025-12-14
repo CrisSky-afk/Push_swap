@@ -6,7 +6,7 @@
 /*   By: csuomins <csuomins@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/29 18:29:26 by csuomins          #+#    #+#             */
-/*   Updated: 2025/08/13 17:39:46 by csuomins         ###   ########.fr       */
+/*   Updated: 2025/12/14 13:56:44 by csuomins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,14 +34,3 @@ int	ft_atoi(const char *str)
 	}
 	return (value * sign);
 }
-
-// int main (void)
-// {
-// 	char str1[20] = "\n87";
-// 	char str2[20] = "-7373 83";
-// 	char str3[20] = "8d009";
-// 	printf("%d\n", ft_atoi(str1));
-// 	printf("%d\n", ft_atoi(str2));
-// 	printf("%d\n", ft_atoi(str3));
-// 	return (0);
-// }

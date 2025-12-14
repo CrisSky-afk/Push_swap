@@ -6,7 +6,7 @@
 /*   By: csuomins <csuomins@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/31 16:55:33 by csuomins          #+#    #+#             */
-/*   Updated: 2025/08/09 16:39:43 by csuomins         ###   ########.fr       */
+/*   Updated: 2025/12/14 13:59:56 by csuomins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,12 +36,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	str[len] = '\0';
 	return (str);
 }
-
-// int main (void)
-// {
-// 	char str1[20] = "bomba de tijolos";
-
-// 	char *result = ft_substr(str1, 9, 7);
-// 	printf("%s\n", result);
-// 	free(result);
-// }

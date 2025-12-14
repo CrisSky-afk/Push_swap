@@ -6,7 +6,7 @@
 /*   By: csuomins <csuomins@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 20:10:53 by csuomins          #+#    #+#             */
-/*   Updated: 2025/08/13 17:40:18 by csuomins         ###   ########.fr       */
+/*   Updated: 2025/12/14 13:57:25 by csuomins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,3 @@ int	ft_isascii(int c)
 		return (1);
 	return (0);
 }
-
-// int main (void)
-// {
-// 	printf("%i\n", ft_isascii(2));
-// 	printf("%i\n", ft_isascii('o'));
-// 	printf("%i\n", ft_isascii('M'));
-// 	printf("%i\n", ft_isascii('~'));
-// 	printf("%i\n", ft_isascii(' '));
-// 	printf("%i\n", ft_isascii(130));
-// }

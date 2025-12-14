@@ -6,7 +6,7 @@
 /*   By: csuomins <csuomins@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 20:27:06 by csuomins          #+#    #+#             */
-/*   Updated: 2025/08/13 17:41:48 by csuomins         ###   ########.fr       */
+/*   Updated: 2025/12/14 13:59:41 by csuomins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,12 +32,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
-
-// int main (void)
-// {
-// 	char str1[20] = "papagaio";
-// 	char str2[20] = "paga";
-// 	char *result = ft_strnstr(str1, str2, 6);
-// 	printf("%s\n", result);
-// 	return (0);
-// }

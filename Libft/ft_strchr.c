@@ -6,7 +6,7 @@
 /*   By: csuomins <csuomins@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 19:23:09 by csuomins          #+#    #+#             */
-/*   Updated: 2025/08/09 16:39:55 by csuomins         ###   ########.fr       */
+/*   Updated: 2025/12/14 13:58:53 by csuomins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,13 +29,3 @@ char	*ft_strchr(const char *str, int c)
 		return ((char *)(str + i));
 	return (NULL);
 }
-
-// int main (void)
-// {
-// 	char str1[20] = "calculadora";
-// 	char *ptr;
-
-// 	ptr = ft_strchr(str1, 'o');
-// 	printf("%c\n", *ptr);
-// 	return (0);
-// }

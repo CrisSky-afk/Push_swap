@@ -6,7 +6,7 @@
 /*   By: csuomins <csuomins@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/21 20:44:11 by csuomins          #+#    #+#             */
-/*   Updated: 2025/08/13 17:41:28 by csuomins         ###   ########.fr       */
+/*   Updated: 2025/12/14 13:59:12 by csuomins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,16 +34,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		dst[dst_len + i] = '\0';
 	return (dst_len + src_len);
 }
-
-// int main (void)
-// {
-// 	char str2[50] = "bom dia porra!";
-//  	char str1[] = "ingrid";
-//  	size_t len;
-
-//  	printf("Origem: %s\n", str1);
-//  	len = ft_strlcat(str2, str1, 21);
-//  	printf("Destino: %s\n", str2);
-//  	printf("Tamanho da origem: %zu\n", len);
-//  	return (0);
-// }

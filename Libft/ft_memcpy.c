@@ -6,7 +6,7 @@
 /*   By: csuomins <csuomins@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 18:06:25 by csuomins          #+#    #+#             */
-/*   Updated: 2025/08/13 17:40:48 by csuomins         ###   ########.fr       */
+/*   Updated: 2025/12/14 13:57:58 by csuomins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,12 +30,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-
-// int main (void)
-// {
-// 	char	str1[] = "estou testando";
-// 	char	str2[sizeof(str1)];
-// 	char *result = ft_memcpy(str2, str1, 4);
-// 	printf("%s\n", result);
-// 	return (0);
-// }

@@ -6,7 +6,7 @@
 /*   By: csuomins <csuomins@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/12 15:46:37 by csuomins          #+#    #+#             */
-/*   Updated: 2025/08/12 16:32:56 by csuomins         ###   ########.fr       */
+/*   Updated: 2025/12/14 13:57:41 by csuomins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,26 +68,3 @@ char	*ft_itoa(int n)
 	result[i] = '\0';
 	return (result);
 }
-
-// int main (void)
-// {
-// 	int number = -727827227;
-// 	char *result = ft_itoa(number);
-// 	printf("Valor do numero inteiro: %i\n", number);
-// 	printf("Valor do resultado em uma string de char: %s\n", result);
-// 	free(result);
-// }
-
-// int main (void)
-// {
-//     char str1[20];
-//     size_t i = 0;
-//     long n = 12345;
-
-//     ft_alldig(str1, n, &i);
-//     str1[i] = '\0'; // finaliza a string
-
-//     printf("Resultado da recursiva: %s\n", str1);
-
-//     return 0;
-// }

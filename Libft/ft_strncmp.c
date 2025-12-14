@@ -6,7 +6,7 @@
 /*   By: csuomins <csuomins@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 18:14:02 by csuomins          #+#    #+#             */
-/*   Updated: 2025/08/13 17:41:44 by csuomins         ###   ########.fr       */
+/*   Updated: 2025/12/14 13:59:36 by csuomins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,18 +31,3 @@ int	ft_strncmp(char *s1, char *s2, size_t n)
 	}
 	return (0);
 }
-
-// int main (void)
-// {
-// 	char *str1 = "rosas sao vermelhas";
-// 	char *str2 = "rosas sao Azuis";
-// 	int result = ft_strncmp(str1, str2, 11);
-// 	printf("%d\n", result);
-// 	if (result == 0)
-// 		printf("As strings sao iguais");
-// 	else if (result > 0)
-// 		printf("A str1 e maior que str2");
-// 	else
-// 		printf("A str2 e maior que str1");
-// 	return (0);
-// }

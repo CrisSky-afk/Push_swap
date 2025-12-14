@@ -6,7 +6,7 @@
 /*   By: csuomins <csuomins@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 20:04:55 by csuomins          #+#    #+#             */
-/*   Updated: 2025/08/13 17:40:10 by csuomins         ###   ########.fr       */
+/*   Updated: 2025/12/14 13:57:12 by csuomins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,3 @@ int	ft_isalnum(int c)
 		return (1);
 	return (0);
 }
-
-// int main (void)
-// {
-// 	printf("%i\n", ft_isalnum(3));
-// 	printf("%i\n", ft_isalnum('a'));
-// 	printf("%i\n", ft_isalnum('P'));
-// 	printf("%i\n", ft_isalnum('+'));
-// }

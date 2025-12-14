@@ -6,7 +6,7 @@
 /*   By: csuomins <csuomins@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/05 16:07:16 by csuomins          #+#    #+#             */
-/*   Updated: 2025/08/13 17:41:23 by csuomins         ###   ########.fr       */
+/*   Updated: 2025/12/14 13:59:05 by csuomins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,12 +32,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	new_str[len_total] = '\0';
 	return (new_str);
 }
-
-// int main (void)
-// {
-// 	char *str1 = "fazendo ";
-// 	char *str2 = "teste";
-// 	char *result = ft_strjoin(str1, str2);
-// 	printf("%s\n", result);
-// 	free(result);
-// }

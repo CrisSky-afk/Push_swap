@@ -6,7 +6,7 @@
 /*   By: csuomins <csuomins@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/31 16:34:02 by csuomins          #+#    #+#             */
-/*   Updated: 2025/08/13 17:41:14 by csuomins         ###   ########.fr       */
+/*   Updated: 2025/12/14 13:58:57 by csuomins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,16 +25,3 @@ char	*ft_strdup(const char *s)
 	size[len] = '\0';
 	return (size);
 }
-
-// int main(void)
-// {
-//     char *str1 = "fazendo o teste da bagaça";
-//     char *ptr = ft_strdup(str1);
-
-//     printf("Conteúdo copiado: %s\n", ptr);   // mostra a string duplicada
-//     printf("Endereço novo  : %p\n", (void *)ptr); // mostra o ponteiro novo
-//     printf("Endereço original: %p\n", (void *)str1);// compara com o original
-
-//     free(ptr); // boa prática: libera a memória alocada
-//     return 0;
-// }

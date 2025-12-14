@@ -6,7 +6,7 @@
 /*   By: csuomins <csuomins@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 19:57:19 by csuomins          #+#    #+#             */
-/*   Updated: 2025/08/13 17:40:22 by csuomins         ###   ########.fr       */
+/*   Updated: 2025/12/14 13:57:29 by csuomins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,3 @@ int	ft_isdigit(int c)
 		return (1);
 	return (0);
 }
-
-// int main (void)
-// {
-// 	printf("%i\n", ft_isdigit(6));
-// 	printf("%i\n", ft_isdigit('v'));
-// 	printf("%i\n", ft_isdigit('+'));
-// 	printf("%i\n", ft_isdigit(0));
-// }

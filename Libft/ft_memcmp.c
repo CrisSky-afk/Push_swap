@@ -6,7 +6,7 @@
 /*   By: csuomins <csuomins@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 19:18:16 by csuomins          #+#    #+#             */
-/*   Updated: 2025/08/13 17:40:42 by csuomins         ###   ########.fr       */
+/*   Updated: 2025/12/14 13:57:53 by csuomins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,13 +29,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-
-// int main (void)
-// {
-// 	char str1[20] = "batata e aeijao";
-// 	char str2[20] = "batata e frroz";
-// 	int result = ft_memcmp(str1, str2, 10);
-
-// 	printf("%d\n", result);
-// 	return (0);
-// }

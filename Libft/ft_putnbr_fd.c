@@ -6,7 +6,7 @@
 /*   By: csuomins <csuomins@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/12 18:56:01 by csuomins          #+#    #+#             */
-/*   Updated: 2025/08/13 17:38:56 by csuomins         ###   ########.fr       */
+/*   Updated: 2025/12/14 13:58:29 by csuomins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,3 @@ void	ft_putnbr_fd(int n, int fd)
 		return ;
 	ft_putnbr_long_fd((long)n, fd);
 }
-
-// int main (void)
-// {
-// 	int nb = 15267228;
-// 	ft_putnbr_fd(nb, 1);
-// 	return (0);
-// }
