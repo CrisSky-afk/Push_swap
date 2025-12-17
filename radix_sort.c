@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   radix_sort.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: csuomins <csuomins@student.42.fr>          +#+  +:+       +#+        */
+/*   By: cris_sky <cris_sky@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/14 13:52:38 by csuomins          #+#    #+#             */
-/*   Updated: 2025/12/14 13:53:53 by csuomins         ###   ########.fr       */
+/*   Updated: 2025/12/15 09:52:20 by cris_sky         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int	get_max_bits(int size)
+static int	get_max_bits(int size)
 {
 	int	max_bits;
 
@@ -22,7 +22,7 @@ int	get_max_bits(int size)
 	return (max_bits);
 }
 
-void	sort_by_bit(t_node **stack_a, t_node **stack_b, int bit, int size)
+static void	sort_by_bit(t_node **stack_a, t_node **stack_b, int bit, int size)
 {
 	int	j;
 

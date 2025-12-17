@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   list_two.c                                         :+:      :+:    :+:   */
+/*   list_helpers.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: csuomins <csuomins@student.42.fr>          +#+  +:+       +#+        */
+/*   By: cris_sky <cris_sky@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/14 14:29:52 by csuomins          #+#    #+#             */
-/*   Updated: 2025/12/14 15:20:42 by csuomins         ###   ########.fr       */
+/*   Updated: 2025/12/15 15:55:47 by cris_sky         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,4 +48,19 @@ int	is_sorted(t_node *stack_a)
 		stack_a = stack_a->next;
 	}
 	return (1);
+}
+
+int	find_position(t_node *stack, int value)
+{
+	int	i;
+
+	i = 0;
+	while (stack)
+	{
+		if (stack->value == value)
+			return (i);
+		stack = stack->next;
+		i++;
+	}
+	return (-1);
 }

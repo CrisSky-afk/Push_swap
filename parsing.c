@@ -3,21 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   parsing.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: csuomins <csuomins@student.42.fr>          +#+  +:+       +#+        */
+/*   By: cris_sky <cris_sky@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/14 13:45:55 by csuomins          #+#    #+#             */
-/*   Updated: 2025/12/14 14:58:42 by csuomins         ###   ########.fr       */
+/*   Updated: 2025/12/15 13:38:36 by cris_sky         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int	is_number(const char *str)
+static int	is_number(const char *str)
 {
 	int	i;
 
 	i = 0;
-	while (str[i] && ft_isspace(str[i]))
+	while (str[i] && ((str[i] >= 9 && str[i] <= 13) || str[i] == 32))
 		i++;
 	if (str[i] == '-' || str[i] == '+')
 		i++;
@@ -64,3 +64,5 @@ int	is_duplicate(int *arr, int size)
 	}
 	return (0);
 }
+
+

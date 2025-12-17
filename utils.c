@@ -3,21 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   utils.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: csuomins <csuomins@student.42.fr>          +#+  +:+       +#+        */
+/*   By: cris_sky <cris_sky@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/14 13:54:02 by csuomins          #+#    #+#             */
-/*   Updated: 2025/12/14 16:02:12 by csuomins         ###   ########.fr       */
+/*   Updated: 2025/12/15 13:55:54 by cris_sky         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-
-int	ft_isspace(char c)
-{
-	if ((c >= 9 && c <= 13) || c == 32)
-		return (1);
-	return (0);
-}
 
 long	ft_atol(const char *str)
 {
@@ -28,7 +21,7 @@ long	ft_atol(const char *str)
 	value = 0;
 	i = 0;
 	sign = 1;
-	while (ft_isspace(str[i]))
+	while ((str[i] >= 9 && str[i] <= 13) || str[i] == 32)
 		i++;
 	if (str[i] == '+' || str[i] == '-')
 	{
@@ -65,17 +58,35 @@ int	*list_for_arr(t_node *head, int *arr_size)
 	return (arr);
 }
 
-void	free_split(char **split)
+static int	find_min(t_node *stack)
 {
-	int	i;
+	int	min;
 
-	i = 0;
-	if (!split)
-		return ;
-	while (split[i])
+	min = stack->value;
+	while (stack)
 	{
-		free(split[i]);
-		i++;
+		if (stack->value < min)
+			min = stack->value;
+		stack = stack->next;
 	}
-	free(split);
+	return (min);
+}
+
+void	push_min_to_b(t_node **stack_a, t_node **stack_b)
+{
+	int	min;
+	int	pos;
+	int	size;
+
+	min = find_min(*stack_a);
+	pos = find_position(*stack_a, min);
+	size = list_size(*stack_a);
+	while ((*stack_a)->value != min)
+	{
+		if (pos <= size / 2)
+			ra(stack_a);
+		else
+			rra(stack_a);
+	}
+	pb(stack_a, stack_b);
 }

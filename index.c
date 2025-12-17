@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   index.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: csuomins <csuomins@student.42.fr>          +#+  +:+       +#+        */
+/*   By: cris_sky <cris_sky@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/14 13:25:33 by csuomins          #+#    #+#             */
-/*   Updated: 2025/12/14 15:39:18 by csuomins         ###   ########.fr       */
+/*   Updated: 2025/12/15 09:51:50 by cris_sky         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	sort_array(int *arr, int size)
+static void	sort_array(int *arr, int size)
 {
 	int	i;
 	int	j;
@@ -34,7 +34,7 @@ void	sort_array(int *arr, int size)
 	}
 }
 
-int	*create_sort_array(int *arr, int size)
+static int	*create_sort_array(int *arr, int size)
 {
 	int	*sorted;
 	int	i;
@@ -49,7 +49,7 @@ int	*create_sort_array(int *arr, int size)
 	return (sorted);
 }
 
-void	replace_with_index(t_node *stack, int *sorted, int size)
+static void	replace_with_index(t_node *stack, int *sorted, int size)
 {
 	int	i;
 
